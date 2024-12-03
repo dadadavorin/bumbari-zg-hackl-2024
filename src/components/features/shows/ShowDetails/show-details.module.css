@@ -1,0 +1,5 @@
+.showRatingValue {
+  color: var(--primary-100);
+  font-weight: bold;
+  font-size: 1.6rem;
+}

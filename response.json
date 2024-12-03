@@ -1,0 +1,26 @@
+
+"records": [
+    {
+        "id": "rec081jPArSThyJT3",
+        "createdTime": "2024-10-09T12:34:38.000Z",
+        "fields": {
+            "date": "2024-12-15T19:00:00.000Z",
+            "organiser": [
+                "reccTaujfBHcSr3Go"
+            ],
+            "name": "name-here",
+            "description": "desc here",
+            "image": [
+                {
+                    "id": "attJkNiIMwN6qSbLe",
+                    "url": "url-here",
+                }
+            ],
+            "price": 13,
+            "link": "https://domain.com/",
+            "category": [
+                "recROGXiU6eqtAJ0n"
+            ],
+        }
+    },
+]

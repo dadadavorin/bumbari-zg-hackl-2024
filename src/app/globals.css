@@ -1,0 +1,94 @@
+:root {
+  --white-100: #ffffff;
+  --purple-primary: #371687;
+  --purple-light: #8d5ce5;
+}
+
+.stars-rating {
+  max-width: min-content;
+}
+
+.rating-input {
+  position: absolute;
+  left: -9999px;
+}
+
+.rating-input--none {
+  display: none;
+}
+
+.rating-label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+
+.rating-icon {
+  --current-color: var(--purple-primary);
+
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  pointer-events: none;
+
+  &.rating-icon-size-sm {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  &.rating-icon-size-md {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+.rating-input:checked ~ .rating-label .rating-icon {
+  --current-color: var(--white-100);
+}
+
+.stars-rating:hover .rating-label .rating-icon {
+  --current-color: var(--purple-primary);
+}
+
+.rating-input:hover ~ .rating-label .rating-icon {
+  --current-color: var(--white-100);
+}
+
+.review-rating {
+  .rating-icon {
+    --current-color: var(--purple-light);
+
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &.rating-5 .rating-icon {
+    --current-color: var(--white-100);
+  }
+
+  &.rating-4 .rating-icon:nth-child(-n + 4) {
+    --current-color: var(--white-100);
+  }
+
+  &.rating-3 .rating-icon:nth-child(-n + 3) {
+    --current-color: var(--white-100);
+  }
+
+  &.rating-2 .rating-icon:nth-child(-n + 2) {
+    --current-color: var(--white-100);
+  }
+
+  &.rating-1 .rating-icon:nth-child(-n + 1) {
+    --current-color: var(--white-100);
+  }
+}
+
+.logo-bumblebee {
+  background-color: #ffffff3d;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
