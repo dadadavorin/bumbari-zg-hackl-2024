@@ -16,6 +16,8 @@ Partially implemented:
 
 ## Getting Started
 
+Install all packages and dependencies.
+
 Replace API URL and Bearer token placeholders with actual values.
 
 Run the development server:
